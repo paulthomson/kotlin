@@ -1,0 +1,10 @@
+Declarations:
+  [0] fun g(x: test.A, y: test.B) (KaFirTopLevelFunctionSymbolPointer)
+  [1] fun g(x: test.B, y: test.A) (KaFirTopLevelFunctionSymbolPointer)
+
+pointsToTheSameSymbolAs for pointers to different declarations:
+  [0] vs [1]: false
+
+Restored:
+  [0] -> [0]
+  [1] -> [1]

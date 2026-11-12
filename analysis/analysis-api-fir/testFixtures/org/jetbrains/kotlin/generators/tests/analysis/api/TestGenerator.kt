@@ -225,6 +225,10 @@ private fun AnalysisApiTestGroup.generateAnalysisApiNonComponentsTests() {
                 symbolsModel(it, "symbolRestoreFromDifferentModule")
             }
 
+            test<AbstractSymbolPointerEqualityTest> {
+                symbolsModel(it, "symbolPointerEquality")
+            }
+
             test<AbstractSymbolByFqNameTest> {
                 symbolsModel(it, "symbolByFqName")
             }

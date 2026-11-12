@@ -1,0 +1,10 @@
+Declarations:
+  [0] fun <T : test.A, U : test.B> g(x: T, y: U) (KaFirTopLevelFunctionSymbolPointer)
+  [1] fun <U : test.A, T : test.B> g(x: T, y: U) (KaFirTopLevelFunctionSymbolPointer)
+
+pointsToTheSameSymbolAs for pointers to different declarations:
+  [0] vs [1]: true <-- COLLISION
+
+Restored:
+  [0] -> [0]
+  [1] -> [0] <-- WRONG DECLARATION

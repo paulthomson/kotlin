@@ -656,7 +656,7 @@ private fun SymbolsData.dropBackingPsi() {
  * As most of the symbols have the underlying PSI element, it is crucial to
  * have consistent implementation for PSI-based and FirSymbol-based symbols.
  */
-private fun KaSymbol.dropBackingPsi() {
+internal fun KaSymbol.dropBackingPsi() {
     val interfaceInstance = Class.forName("org.jetbrains.kotlin.analysis.api.fir.symbols.KaFirPsiSymbol")
     val symbolType = KaSymbol::class.createType()
 
